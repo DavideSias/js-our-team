@@ -40,16 +40,12 @@ for (let i = 0; i < arrTeam.length; i++) {
     eleRole = document.createElement('h3');
 
     eleCard.classList.add('card');
-    eleContainer.append(eleCard);
+    
+    eleImg.src = (`img/${arrTeam[i].photo}`);
+    eleName.textContent = (`${arrTeam[i].name}`);
+    eleRole.textContent = (`${arrTeam[i].role}`);
 
     eleCard.append(eleImg, eleName, eleRole);
-
-    eleImg.src = (`img/${arrTeam[i].photo}`);
-    eleName.innerHtml = (`${arrTeam[i].name}`);
-    eleRole.innerHtml = (`${arrTeam[i].role}`);
-
-    console.log(eleName.innerHtml);
-    console.log(eleRole.innerHtml);
-
+    eleContainer.append(eleCard);
 }
 
