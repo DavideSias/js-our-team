@@ -51,7 +51,5 @@ for (let i = 0; i < arrTeam.length; i++) {
     console.log(eleName.innerHtml);
     console.log(eleRole.innerHtml);
 
-
-	//eleCard.innerHTML += (`Membro del team numero ${i}: ${arrTeam[i].name} ${arrTeam[i].role} ${arrTeam[i].photo}`);
 }
 
