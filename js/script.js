@@ -31,6 +31,12 @@ const arrTeam = [
     }
 ]
 
+const eleContainer = document.querySelector('.container');
+
 for (let i = 0; i < arrTeam.length; i++) {
-	console.log(`Membro del team numero ${i}: ${arrTeam[i].name} ${arrTeam[i].role} ${arrTeam[i].photo}`);
+    eleCard = document.createElement('div');
+    eleCard.classList.add('card');
+    eleContainer.append(eleCard);
+	eleCard.innerHTML += (`Membro del team numero ${i}: ${arrTeam[i].name} ${arrTeam[i].role} ${arrTeam[i].photo}`);
 }
+
